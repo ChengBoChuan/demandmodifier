@@ -4,25 +4,40 @@
 	<!--Name of the mod to display to players-->
 	<DisplayName Value="Demand Modifier" />
 	<!--Short description of the mod-->
-	<ShortDescription Value="This is a short description" />
+	<ShortDescription Value="全面的城市需求、服務與經濟控制模組 - 讓您的城市建設體驗更加自由" />
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
 	<!--LongDescription Value="This is a long description" /-->
 	<LongDescription>
-**Infinite Demand** is part of the CSL2 Demand Control suite - bringing back this essential mod from Cities: Skylines for a better sandbox experience.
+**Demand Modifier** 是一個全方位的城市控制模組，為 Cities: Skylines 2 帶來三大核心功能：需求控制、服務控制與經濟控制。
 
-This mod sets all zone demands (Residential, Commercial, and Industrial) to maximum levels, ensuring that:
-- New zones get built immediately when conditions are met
-- No waiting for demand to accumulate
-- Perfect for sandbox-style city building
-- No performance impact - uses lightweight Harmony patches
+**需求控制 (Demand Control)**
+- 住宅需求：將所有密度類型的住宅需求固定在最大值
+- 商業需求：商業區立即響應需求建設
+- 工業需求：工業區、倉儲和辦公大樓需求最大化
+- 完美適合沙盒式城市建設，無需等待需求累積
 
-**Features:**
-- Maximum residential demand (all densities)
-- Maximum commercial demand
-- Maximum industrial demand (including storage and office buildings)
-- Works seamlessly with game simulation
+**服務控制 (Service Control)**
+- 無限電力供應
+- 無限供水系統
+- 無限汙水處理
+- 無限垃圾處理
+- 無限醫療服務
+- 無限教育資源
+- 無限警力支援
+- 無限消防支援
 
-Built with .NET 8 for optimal performance and compatibility with the latest game versions.
+**經濟控制 (Economy Control)**
+- 無限金錢模式
+- 免費建設功能
+- 零維護成本選項
+
+**技術特點：**
+- 使用 Harmony 補丁技術，輕量化設計不影響效能
+- 支援多國語言 (繁體中文、簡體中文、英文、日文、德文、西班牙文、法文)
+- 所有功能可獨立開關，完全自訂您的遊戲體驗
+- 與遊戲模擬系統無縫整合
+
+完全開源，使用 .NET Framework 4.8.1 建構，相容遊戲版本 1.2.*
 	</LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="Properties/Thumbnail.png" />
@@ -33,7 +48,7 @@ Built with .NET 8 for optimal performance and compatibility with the latest game
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.0.1" />
+	<ModVersion Value="0.0.3" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.2.*" />
 	<!--Dependency for the mod, can be set multiple times-->
