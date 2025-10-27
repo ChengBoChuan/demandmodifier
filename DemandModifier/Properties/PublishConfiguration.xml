@@ -79,7 +79,7 @@ Fully open source, built with .NET Framework 4.8.1, compatible with game version
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.0.5" />
+	<ModVersion Value="0.0.6" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.2.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -87,7 +87,7 @@ Fully open source, built with .NET Framework 4.8.1, compatible with game version
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
 	<RequiredDLC Value="" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="Version 0.0.5 - 修正語系檔案編碼問題 | Fixed localization file encoding issues - All language files now use UTF-8 without BOM with consistent LF line endings - Improved formatting consistency across all 7 language files" />
+	<ChangeLog Value="Version 0.0.6 - 修正語系檔案編碼問題 | Fixed localization file encoding issues - All language files now use UTF-8 without BOM with consistent LF line endings - Improved formatting consistency across all 7 language files" />
 	<!--External link, can be set multiple times. supported types are "discord", "github", "youtube", "twitch", "x", "paypal", "patreon", "buymeacoffee", "kofi", "crowdin", "gitlab", "gofundme"-->
 	<ExternalLink Type="github" Url="https://github.com/ChengBoChuan/demandmodifier" />
 </Publish>

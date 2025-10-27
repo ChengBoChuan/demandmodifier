@@ -11,7 +11,7 @@
     <Message Text="========================================" Importance="high" />
     
     --><!-- 執行 PowerShell 腳本來更新版本號 --><!--
-    <Exec Command="pwsh -ExecutionPolicy Bypass -File &quot;$(ProjectDir)Properties\UpdateVersion.ps1&quot; &quot;$(PublishConfigPath)&quot;" 
+    <Exec Command="pwsh -ExecutionPolicy Bypass -File &quot;$(ProjectDir)scripts\UpdateVersion.ps1&quot; &quot;$(PublishConfigPath)&quot;" 
           IgnoreExitCode="false" />
     
     <Message Text="========================================" Importance="high" />
