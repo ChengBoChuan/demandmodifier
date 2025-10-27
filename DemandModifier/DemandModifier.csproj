@@ -84,4 +84,7 @@
 		</None>
 	</ItemGroup>
 
+	<!-- 匯入自動版本更新任務 -->
+	<Import Project="Properties\UpdateVersion.targets" />
+
 </Project>

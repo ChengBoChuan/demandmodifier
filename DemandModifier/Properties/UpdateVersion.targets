@@ -1,0 +1,20 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <!-- 在建置後自動更新 ModVersion -->
+  <Target Name="UpdateModVersion" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <PublishConfigPath>$(ProjectDir)Properties\PublishConfiguration.xml</PublishConfigPath>
+    </PropertyGroup>
+    
+    <Message Text="========================================" Importance="high" />
+    <Message Text="🔄 開始自動更新 ModVersion..." Importance="high" />
+    <Message Text="========================================" Importance="high" />
+    
+    <!-- 執行 PowerShell 腳本來更新版本號 -->
+    <Exec Command="pwsh -ExecutionPolicy Bypass -File &quot;$(ProjectDir)Properties\UpdateVersion.ps1&quot; &quot;$(PublishConfigPath)&quot;" 
+          IgnoreExitCode="false" />
+    
+    <Message Text="========================================" Importance="high" />
+  </Target>
+
+</Project>
