@@ -1,54 +1,53 @@
 {
-  "Options.SECTION[DemandModifier.DemandModifierSettings.需求控制]": "需要制御",
-  "Options.SECTION[DemandModifier.DemandModifierSettings.服務控制]": "サービス制御",
-  "Options.SECTION[DemandModifier.DemandModifierSettings.經濟控制]": "経済制御",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "需要管理",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "サービス管理",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "経済管理",
   
-  "Options.GROUP[DemandModifier.DemandModifierSettings.住宅需求]": "住宅需要",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.商業需求]": "商業需要",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.工業需求]": "工業需要",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.服務設定]": "サービス設定",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.資源設定]": "リソース設定",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.經濟設定]": "経済設定",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemand]": "住宅需要",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemand]": "商業需要",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemand]": "工業需要",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ServiceSettings]": "サービス設定",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "経済設定",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "住宅需要を常に最大に",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "すべての住宅（低密度・中密度・高密度）の需要を常に最大に保ち、住民がどんどん入居します",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "住宅需要を最大化",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "すべての密度タイプの住宅需要を常に最大に保ちます",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商業需要を常に最大に",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商業施設の需要を常に最大に保ち、店舗がどんどん開業します",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商業需要を最大化",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商業建物の需要を常に最大に保ちます",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工業需要を常に最大に",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工場・倉庫・オフィスの需要を常に最大に保ち、企業がどんどん拡大します",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工業需要を最大化",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工業、倉庫、オフィスビルの需要を常に最大に保ちます",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "電力使い放題",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "停電の心配がなくなります（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Unlimited Electricity",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Never run out of electricity (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "水道使い放題",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "断水の心配がなくなります（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Unlimited Water",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Never run out of water (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "下水を瞬時に処理",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "すべての下水を即座に処理します（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Unlimited Sewage Processing",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Process all sewage instantly (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "ゴミを瞬時に回収",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "すべてのゴミを即座に回収します（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Unlimited Garbage Collection",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Collect all garbage instantly (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "医療サービス完全カバー",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "すべての市民が医療を受けられます（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Unlimited Healthcare",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Provide healthcare to everyone (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "教育サービス完全カバー",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "すべての市民が教育を受けられます（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Unlimited Education",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Provide education to everyone (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "警察完全配備",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "街中どこでも警察が巡回します（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Unlimited Police Service",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Keep the city safe everywhere (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "消防隊即座に出動",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "すべての火災を即座に消火します（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Unlimited Fire Department",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Respond to all fires instantly (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "資金使い放題",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "破産の心配がなくなります（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Unlimited Money",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Never worry about running out of money (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "建設費用ゼロ",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "何を建てても無料になります（近日実装予定）",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Free Construction",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Build anything without paying (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "維持費ゼロ",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "すべての建物の維持費が無料になります（近日実装予定）"
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "No Upkeep Costs",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "All buildings are free to maintain (Coming soon)"
 }

@@ -1,54 +1,53 @@
 {
-  "Options.SECTION[DemandModifier.DemandModifierSettings.需求控制]": "Contrôle de la Demande",
-  "Options.SECTION[DemandModifier.DemandModifierSettings.服務控制]": "Contrôle des Services",
-  "Options.SECTION[DemandModifier.DemandModifierSettings.經濟控制]": "Contrôle Économique",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "Contrôle de la Demande",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "Contrôle des Services",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Contrôle Économique",
   
-  "Options.GROUP[DemandModifier.DemandModifierSettings.住宅需求]": "Demande Résidentielle",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.商業需求]": "Demande Commerciale",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.工業需求]": "Demande Industrielle",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.服務設定]": "Paramètres des Services",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.資源設定]": "Paramètres des Ressources",
-  "Options.GROUP[DemandModifier.DemandModifierSettings.經濟設定]": "Paramètres Économiques",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemand]": "Demande Résidentielle",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemand]": "Demande Commerciale",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemand]": "Demande Industrielle",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ServiceSettings]": "Paramètres des Services",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "Paramètres Économiques",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "Demande résidentielle toujours au maximum",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "Tous les logements (faible, moyenne et haute densité) auront toujours une demande maximale - les citoyens voudront constamment emménager",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "Demande Résidentielle Maximale",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "Maintenir la demande résidentielle au maximum pour tous les types de densité",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "Demande commerciale toujours au maximum",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "Les commerces auront toujours une demande maximale - les magasins voudront constamment ouvrir",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "Demande Commerciale Maximale",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "Maintenir la demande de bâtiments commerciaux au maximum",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "Demande industrielle toujours au maximum",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "Les usines, entrepôts et bureaux auront toujours une demande maximale - les entreprises voudront constamment s'agrandir",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "Demande Industrielle Maximale",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "Maintenir la demande de bâtiments industriels, entrepôts et bureaux au maximum",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Électricité illimitée",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Jamais de panne d'électricité (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Unlimited Electricity",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Never run out of electricity (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Eau illimitée",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Jamais de pénurie d'eau (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Unlimited Water",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Never run out of water (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Eaux usées traitées instantanément",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Toutes les eaux usées sont traitées instantanément (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Unlimited Sewage Processing",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Process all sewage instantly (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Ordures collectées instantanément",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Toutes les ordures sont collectées instantanément (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Unlimited Garbage Collection",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Collect all garbage instantly (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Santé pour tous",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Tous les citoyens reçoivent des soins (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Unlimited Healthcare",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Provide healthcare to everyone (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Éducation pour tous",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Tous les citoyens reçoivent une éducation (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Unlimited Education",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Provide education to everyone (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Police partout",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "La ville est sécurisée partout (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Unlimited Police Service",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Keep the city safe everywhere (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Pompiers ultra-rapides",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Tous les incendies sont éteints instantanément (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Unlimited Fire Department",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Respond to all fires instantly (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Argent illimité",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Jamais de faillite (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Unlimited Money",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Never worry about running out of money (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Construction gratuite",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Construisez tout sans payer (Bientôt disponible)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Free Construction",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Build anything without paying (Coming soon)",
   
-  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "Sans frais d'entretien",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "Tous les bâtiments ne coûtent rien à entretenir (Bientôt disponible)"
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "No Upkeep Costs",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "All buildings are free to maintain (Coming soon)"
 }
