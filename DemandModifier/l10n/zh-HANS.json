@@ -1,0 +1,54 @@
+{
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.需求控制]": "需求控制",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.服務控制]": "服务控制",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.經濟控制]": "经济控制",
+  
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.住宅需求]": "住宅需求",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.商業需求]": "商业需求",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.工業需求]": "工业需求",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.服務設定]": "服务设定",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.資源設定]": "资源设定",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.經濟設定]": "经济设定",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "住宅需求永远满格",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "让所有类型的住宅（低、中、高密度）需求永远保持最大值，居民会一直想搬进来",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商业需求永远满格",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "让商业建筑需求永远保持最大值，店家会一直想开业",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工业需求永远满格",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "让工业、仓库和办公室的需求永远保持最大值，企业会一直想扩张",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "电力永不断电",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "城市永远有用不完的电力（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "自来水永不缺水",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "城市永远有用不完的水（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "污水瞬间处理",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "所有污水都能即时处理完毕（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "垃圾瞬间清理",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "所有垃圾都能即时清理干净（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "医疗服务全覆盖",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "所有市民都能得到医疗照顾（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "教育服务全覆盖",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "所有市民都能接受教育（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "警力全面部署",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "城市每个角落都有警察巡逻（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "消防队快速救援",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "任何火灾都能立即扑灭（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "金钱永远花不完",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "再也不用担心破产了（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "建设完全免费",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "盖什么都不用花钱（即将推出）",
+  
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "建筑零维护费",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "所有建筑都不用花钱维护（即将推出）"
+}
