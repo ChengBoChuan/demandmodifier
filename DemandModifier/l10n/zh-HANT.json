@@ -1,54 +1,54 @@
 {
-  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.需求控制]": "需求控制",
-  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.服務控制]": "服務控制",
-  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.經濟控制]": "經濟控制",
+  "Options.SECTION[DemandModifier.DemandModifierSettings.需求控制]": "需求控制",
+  "Options.SECTION[DemandModifier.DemandModifierSettings.服務控制]": "服務控制",
+  "Options.SECTION[DemandModifier.DemandModifierSettings.經濟控制]": "經濟控制",
   
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.住宅需求]": "住宅需求",
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.商業需求]": "商業需求",
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.工業需求]": "工業需求",
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.服務設定]": "服務設定",
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.資源設定]": "資源設定",
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.經濟設定]": "經濟設定",
+  "Options.GROUP[DemandModifier.DemandModifierSettings.住宅需求]": "住宅需求",
+  "Options.GROUP[DemandModifier.DemandModifierSettings.商業需求]": "商業需求",
+  "Options.GROUP[DemandModifier.DemandModifierSettings.工業需求]": "工業需求",
+  "Options.GROUP[DemandModifier.DemandModifierSettings.服務設定]": "服務設定",
+  "Options.GROUP[DemandModifier.DemandModifierSettings.資源設定]": "資源設定",
+  "Options.GROUP[DemandModifier.DemandModifierSettings.經濟設定]": "經濟設定",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "住宅需求永遠滿格",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "讓所有類型的住宅（低、中、高密度）需求永遠保持最大值，居民會一直想搬進來",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "住宅需求永遠滿格",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "讓所有類型的住宅（低、中、高密度）需求永遠保持最大值，居民會一直想搬進來",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商業需求永遠滿格",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "讓商業建築需求永遠保持最大值，店家會一直想開業",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "商業需求永遠滿格",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "讓商業建築需求永遠保持最大值，店家會一直想開業",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工業需求永遠滿格",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "讓工業、倉庫和辦公室的需求永遠保持最大值，企業會一直想擴張",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "工業需求永遠滿格",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "讓工業、倉庫和辦公室的需求永遠保持最大值，企業會一直想擴張",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "電力永不斷電",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "城市永遠有用不完的電力（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "電力永不斷電",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "城市永遠有用不完的電力（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "自來水永不缺水",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "城市永遠有用不完的水（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "自來水永不缺水",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "城市永遠有用不完的水（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "污水瞬間處理",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "所有污水都能即時處理完畢（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "污水瞬間處理",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "所有污水都能即時處理完畢（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "垃圾瞬間清理",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "所有垃圾都能即時清理乾淨（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "垃圾瞬間清理",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "所有垃圾都能即時清理乾淨（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "醫療服務全覆蓋",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "所有市民都能得到醫療照顧（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "醫療服務全覆蓋",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "所有市民都能得到醫療照顧（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "教育服務全覆蓋",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "所有市民都能接受教育（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "教育服務全覆蓋",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "所有市民都能接受教育（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "警力全面部署",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "城市每個角落都有警察巡邏（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "警力全面部署",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "城市每個角落都有警察巡邏（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "消防隊快速救援",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "任何火災都能立即撲滅（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "消防隊快速救援",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "任何火災都能立即撲滅（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "金錢永遠花不完",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "再也不用擔心破產了（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "金錢永遠花不完",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "再也不用擔心破產了（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "建設完全免費",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "蓋什麼都不用花錢（即將推出）",
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "建設完全免費",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "蓋什麼都不用花錢（即將推出）",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "建築零維護費",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "所有建築都不用花錢維護（即將推出）"
+  "Options.OPTION[DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "建築零維護費",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "所有建築都不用花錢維護（即將推出）"
 }

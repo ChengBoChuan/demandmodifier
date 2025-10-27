@@ -7,7 +7,8 @@
 	<!--Short description of the mod-->
 	<ShortDescription Value="全面的城市需求、服務與經濟控制模組 - 讓您的城市建設體驗更加自由" />
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
-	<!--LongDescription Value="This is a long description" /-->
+	<!--LongDescription Value="**Demand Modifier** is a comprehensive city control mod for Cities: Skylines 2, bringing three core features: Demand Control, Service Control, and Economy Control.
+" /-->
 	<LongDescription>
 **Demand Modifier** 是一個全方位的城市控制模組，為 Cities: Skylines 2 帶來三大核心功能：需求控制、服務控制與經濟控制。
 
@@ -78,7 +79,7 @@ Fully open source, built with .NET Framework 4.8.1, compatible with game version
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.0.2" />
+	<ModVersion Value="0.0.3" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.3.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -86,7 +87,7 @@ Fully open source, built with .NET Framework 4.8.1, compatible with game version
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
 	<RequiredDLC Value="" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="Version 0.0.2 - 功能更新與 Bug 修復" />
+	<ChangeLog Value="Version 0.0.3 - 修復多國語系顯示問題 | Fixed localization display issues - All 7 language files updated with correct namespace format" />
 	<!--External link, can be set multiple times. supported types are "discord", "github", "youtube", "twitch", "x", "paypal", "patreon", "buymeacoffee", "kofi", "crowdin", "gitlab", "gofundme"-->
 	<ExternalLink Type="github" Url="https://github.com/ChengBoChuan/demandmodifier" />
 </Publish>
