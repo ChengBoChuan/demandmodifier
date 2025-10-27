@@ -81,7 +81,7 @@ Fully open source, built with .NET Framework 4.8.1, compatible with game version
 	<!--Version of the mod-->
 	<ModVersion Value="0.0.6" />
 	<!--Recommended version of the base game to use the mod-->
-	<GameVersion Value="1.2.*" />
+	<GameVersion Value="1.3.*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="" />
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
