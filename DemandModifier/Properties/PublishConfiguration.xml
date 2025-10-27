@@ -11,34 +11,63 @@
 	<LongDescription>
 **Demand Modifier** 是一個全方位的城市控制模組，為 Cities: Skylines 2 帶來三大核心功能：需求控制、服務控制與經濟控制。
 
-**需求控制 (Demand Control)**
-- 住宅需求：將所有密度類型的住宅需求固定在最大值
-- 商業需求：商業區立即響應需求建設
-- 工業需求：工業區、倉儲和辦公大樓需求最大化
+**Demand Modifier** is a comprehensive city control mod for Cities: Skylines 2, bringing three core features: Demand Control, Service Control, and Economy Control.
+
+---
+
+## 需求控制 | Demand Control
+
+**住宅需求 | Residential Demand**
+- 將所有密度類型的住宅需求固定在最大值
+- Keep residential demand at maximum for all density types
+
+**商業需求 | Commercial Demand**
+- 商業區立即響應需求建設
+- Instant commercial zone demand response
+
+**工業需求 | Industrial Demand**
+- 工業區、倉儲和辦公大樓需求最大化
+- Maximize demand for industrial zones, storage, and office buildings
 - 完美適合沙盒式城市建設，無需等待需求累積
+- Perfect for sandbox city building without waiting for demand accumulation
 
-**服務控制 (Service Control)**
-- 無限電力供應
-- 無限供水系統
-- 無限汙水處理
-- 無限垃圾處理
-- 無限醫療服務
-- 無限教育資源
-- 無限警力支援
-- 無限消防支援
+---
 
-**經濟控制 (Economy Control)**
-- 無限金錢模式
-- 免費建設功能
-- 零維護成本選項
+## 服務控制 | Service Control
 
-**技術特點：**
+- ⚡ 無限電力供應 | Unlimited Electricity
+- 💧 無限供水系統 | Unlimited Water Supply
+- 🚰 無限汙水處理 | Unlimited Sewage Treatment
+- 🗑️ 無限垃圾處理 | Unlimited Garbage Collection
+- 🏥 無限醫療服務 | Unlimited Healthcare
+- 🎓 無限教育資源 | Unlimited Education
+- 👮 無限警力支援 | Unlimited Police Support
+- 🚒 無限消防支援 | Unlimited Fire Protection
+
+---
+
+## 經濟控制 | Economy Control
+
+- 💰 無限金錢模式 | Unlimited Money
+- 🆓 免費建設功能 | Free Construction
+- 📉 零維護成本選項 | Zero Maintenance Cost
+
+---
+
+## 技術特點 | Technical Features
+
 - 使用 Harmony 補丁技術，輕量化設計不影響效能
+- Built with Harmony patching - lightweight design with no performance impact
 - 支援多國語言 (繁體中文、簡體中文、英文、日文、德文、西班牙文、法文)
+- Multi-language support (Traditional Chinese, Simplified Chinese, English, Japanese, German, Spanish, French)
 - 所有功能可獨立開關，完全自訂您的遊戲體驗
+- All features can be toggled independently for complete customization
 - 與遊戲模擬系統無縫整合
+- Seamlessly integrated with game simulation systems
 
 完全開源，使用 .NET Framework 4.8.1 建構，相容遊戲版本 1.2.*
+
+Fully open source, built with .NET Framework 4.8.1, compatible with game version 1.2.*
 	</LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="Properties/Thumbnail.png" />
@@ -49,7 +78,7 @@
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.0.7" />
+	<ModVersion Value="0.0.2" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.2.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -57,9 +86,7 @@
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
 	<RequiredDLC Value="" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="" />
-	<!--<ChangeLog>
-	</ChangeLog>-->
+	<ChangeLog Value="Version 0.0.2 - 功能更新與 Bug 修復" />
 	<!--External link, can be set multiple times. supported types are "discord", "github", "youtube", "twitch", "x", "paypal", "patreon", "buymeacoffee", "kofi", "crowdin", "gitlab", "gofundme"-->
-	<ExternalLink Type="github" Url="" />
+	<ExternalLink Type="github" Url="https://github.com/ChengBoChuan/demandmodifier" />
 </Publish>
