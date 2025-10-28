@@ -1,4 +1,8 @@
 {
+  "Options.SETTINGS[DemandModifier.DemandModifier.DemandModifierSettings]": "Demand Modifier",
+  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "Demand Control",
+  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "Service Control",
+  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Economic Control",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "Demand Control",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "Service Control",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Economic Control",
@@ -9,14 +13,20 @@
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ServiceSettings]": "Service Settings",
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "Economic Settings",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "Enable Max Residential Demand",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableResidentialDemand]": "Always keep residential demand at maximum for all density types (low, medium, and high)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Residential Demand Level",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Set the demand intensity for all residential types (low, medium, and high density)",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "Enable Max Commercial Demand",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableCommercialDemand]": "Always keep commercial building demand at maximum",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "Commercial Demand Level",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "Set the demand intensity for commercial buildings",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "Enable Max Industrial Demand",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableIndustrialDemand]": "Always keep industrial, storage, and office building demand at maximum",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Industrial Demand Level",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Set the demand intensity for industrial, storage, and office buildings",
+  
+  "Common.ENUM[DemandModifier.DemandLevel.Off]": "Off",
+  "Common.ENUM[DemandModifier.DemandLevel.Low]": "Low (25%)",
+  "Common.ENUM[DemandModifier.DemandLevel.Medium]": "Medium (50%)",
+  "Common.ENUM[DemandModifier.DemandLevel.High]": "High (75%)",
+  "Common.ENUM[DemandModifier.DemandLevel.Maximum]": "Maximum (100%)",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Unlimited Electricity",
   "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Never run out of electricity (Coming soon)",

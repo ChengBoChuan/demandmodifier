@@ -42,7 +42,7 @@ namespace DemandModifier
             // 從全域資料庫載入設定
             AssetDatabase.global.LoadSettings(nameof(DemandModifier), Settings, new DemandModifierSettings(this));
             
-            log.Info($"設定已載入 - 住宅需求: {Settings.EnableResidentialDemand}, 商業需求: {Settings.EnableCommercialDemand}, 工業需求: {Settings.EnableIndustrialDemand}");
+            log.Info($"設定已載入 - 住宅需求: {Settings.ResidentialDemandLevel}, 商業需求: {Settings.CommercialDemandLevel}, 工業需求: {Settings.IndustrialDemandLevel}");
 
             // 建立 Harmony 實例並自動套用所有標記的補丁
             var harmony = new HarmonyLib.Harmony("net.johnytoxic.demandmodifier");

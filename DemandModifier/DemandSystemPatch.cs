@@ -19,16 +19,16 @@ namespace DemandModifier
             AccessTools.FieldRefAccess<CommercialDemandSystem, NativeValue<int>>("m_BuildingDemand");
 
         /// <summary>
-        /// Harmony 前綴補丁 - 在原始方法執行前將商業建築需求設為最大值 (255)
+        /// Harmony 前綴補丁 - 在原始方法執行前將商業建築需求設為指定值
         /// </summary>
         /// <param name="__instance">CommercialDemandSystem 的實例</param>
         static void Prefix(CommercialDemandSystem __instance)
         {
-            // 僅在設定啟用時才修改需求值
-            if (DemandModifierMod.Settings != null && DemandModifierMod.Settings.EnableCommercialDemand == true)
+            // 僅在設定存在且未設為 Off 時才修改需求值
+            if (DemandModifierMod.Settings != null && DemandModifierMod.Settings.CommercialDemandLevel != DemandLevel.Off)
             {
-                // 設定商業建築需求為最大值，確保商業區域持續發展
-                BuildingDemandRef(__instance).value = 255;
+                // 設定商業建築需求為使用者選擇的值
+                BuildingDemandRef(__instance).value = (int)DemandModifierMod.Settings.CommercialDemandLevel;
             }
         }
     }
@@ -58,20 +58,21 @@ namespace DemandModifier
             AccessTools.FieldRefAccess<IndustrialDemandSystem, NativeValue<int>>("m_OfficeBuildingDemand");
 
         /// <summary>
-        /// Harmony 前綴補丁 - 在原始方法執行前將所有工業相關需求設為最大值 (255)
+        /// Harmony 前綴補丁 - 在原始方法執行前將所有工業相關需求設為指定值
         /// </summary>
         /// <param name="__instance">IndustrialDemandSystem 的實例</param>
         static void Prefix(IndustrialDemandSystem __instance)
         {
-            // 僅在設定啟用時才修改需求值
-            if (DemandModifierMod.Settings != null && DemandModifierMod.Settings.EnableIndustrialDemand == true)
+            // 僅在設定存在且未設為 Off 時才修改需求值
+            if (DemandModifierMod.Settings != null && DemandModifierMod.Settings.IndustrialDemandLevel != DemandLevel.Off)
             {
-                // 設定工業建築需求為最大值
-                IndustrialBuildingDemandRef(__instance).value = 255;
-                // 設定倉儲建築需求為最大值
-                StorageBuildingDemand(__instance).value = 255;
-                // 設定辦公建築需求為最大值
-                OfficeBuildingDemand(__instance).value = 255;
+                int demandValue = (int)DemandModifierMod.Settings.IndustrialDemandLevel;
+                // 設定工業建築需求為使用者選擇的值
+                IndustrialBuildingDemandRef(__instance).value = demandValue;
+                // 設定倉儲建築需求為使用者選擇的值
+                StorageBuildingDemand(__instance).value = demandValue;
+                // 設定辦公建築需求為使用者選擇的值
+                OfficeBuildingDemand(__instance).value = demandValue;
             }
         }
     }
@@ -131,25 +132,27 @@ namespace DemandModifier
         };
 
         /// <summary>
-        /// Harmony 前綴補丁 - 在原始方法執行前將所有住宅需求設為最大值 (255)
+        /// Harmony 前綴補丁 - 在原始方法執行前將所有住宅需求設為指定值
         /// </summary>
         /// <param name="__instance">ResidentialDemandSystem 的實例</param>
         static void Prefix(ResidentialDemandSystem __instance)
         {
-            // 僅在設定啟用時才修改需求值
-            if (DemandModifierMod.Settings != null && DemandModifierMod.Settings.EnableResidentialDemand == true)
+            // 僅在設定存在且未設為 Off 時才修改需求值
+            if (DemandModifierMod.Settings != null && DemandModifierMod.Settings.ResidentialDemandLevel != DemandLevel.Off)
             {
-                // 設定建築需求為最大值 (包含低/中/高密度)
-                BuildingDemandRef(__instance).value = 255;
-                // 設定家庭需求為最大值
-                HouseholdDemandRef(__instance).value = 255;
+                int demandValue = (int)DemandModifierMod.Settings.ResidentialDemandLevel;
+                
+                // 設定建築需求為指定值 (包含低/中/高密度)
+                BuildingDemandRef(__instance).value = demandValue;
+                // 設定家庭需求為指定值
+                HouseholdDemandRef(__instance).value = demandValue;
 
-                // 遍歷所有需求因素，將低/中/高密度的每個因素都設為最大值
+                // 遍歷所有需求因素，將低/中/高密度的每個因素都設為指定值
                 foreach (var factor in Factors)
                 {
-                    LowDemandFactorsRef(__instance)[(int)factor] = 255;
-                    MediumDemandFactorsRef(__instance)[(int)factor] = 255;
-                    HighDemandFactorsRef(__instance)[(int)factor] = 255;
+                    LowDemandFactorsRef(__instance)[(int)factor] = demandValue;
+                    MediumDemandFactorsRef(__instance)[(int)factor] = demandValue;
+                    HighDemandFactorsRef(__instance)[(int)factor] = demandValue;
                 }
             }
         }
