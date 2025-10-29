@@ -1,63 +1,59 @@
 {
-  "Options.SETTINGS[DemandModifier.DemandModifier.DemandModifierSettings]": "Demand Modifier",
-  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "Demand Control",
-  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "Service Control",
-  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Economic Control",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "Demand Control",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "Service Control",
-  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Economic Control",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Economy Control",
   
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemand]": "Residential Demand",
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemand]": "Commercial Demand",
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemand]": "Industrial Demand",
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ServiceSettings]": "Service Settings",
-  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "Economic Settings",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "Economy Settings",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Residential Demand Level",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Set the demand intensity for all residential types (low, medium, and high density)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Set the demand intensity for all residential types",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "Commercial Demand Level",
   "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "Set the demand intensity for commercial buildings",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Industrial Demand Level",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Set the demand intensity for industrial, storage, and office buildings",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Set the demand intensity for industrial buildings",
   
-  "Common.ENUM[DemandModifier.DemandLevel.Off]": "Off",
-  "Common.ENUM[DemandModifier.DemandLevel.Low]": "Low (25%)",
-  "Common.ENUM[DemandModifier.DemandLevel.Medium]": "Medium (50%)",
-  "Common.ENUM[DemandModifier.DemandLevel.High]": "High (75%)",
-  "Common.ENUM[DemandModifier.DemandLevel.Maximum]": "Maximum (100%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Off]": "Off (Game Default)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Low]": "Low (25%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Medium]": "Medium (50%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.High]": "High (75%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Maximum]": "Maximum (100%)",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Unlimited Electricity",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Never run out of electricity (Coming soon)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Never run out of electricity - all buildings receive power",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Unlimited Water",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Never run out of water (Coming soon)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Never run out of water - all buildings receive water",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Unlimited Sewage Processing",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Process all sewage instantly (Coming soon)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Unlimited Sewage",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Never overflow sewage systems",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Unlimited Garbage Collection",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Collect all garbage instantly (Coming soon)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Unlimited Garbage",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Never run out of garbage disposal",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Unlimited Healthcare",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Provide healthcare to everyone (Coming soon)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "All buildings always have healthcare access",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Unlimited Education",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Provide education to everyone (Coming soon)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "All buildings always have education access",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Unlimited Police Service",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Keep the city safe everywhere (Coming soon)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Unlimited Police",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "All buildings always have police protection",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Unlimited Fire Department",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Respond to all fires instantly (Coming soon)",
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Unlimited Fire Safety",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "All buildings always have fire safety coverage",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Unlimited Money",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Never worry about running out of money (Coming soon)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Never run out of money",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Free Construction",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Build anything without paying (Coming soon)",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "All buildings and infrastructure cost nothing to construct",
   
-  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "No Upkeep Costs",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "All buildings are free to maintain (Coming soon)"
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "No Upkeep Cost",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "All buildings and infrastructure have no maintenance costs"
 }

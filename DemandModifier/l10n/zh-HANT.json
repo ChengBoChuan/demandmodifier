@@ -1,8 +1,4 @@
 {
-  "Options.SETTINGS[DemandModifier.DemandModifier.DemandModifierSettings]": "需求調整器",
-  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "需求控制",
-  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "服務控制",
-  "Options.TAB[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "經濟控制",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "需求控制",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "服務控制",
   "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "經濟控制",
@@ -14,50 +10,50 @@
   "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "經濟設定",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "住宅需求等級",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "設定所有類型住宅（低、中、高密度）的需求強度",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "設定所有類型住宅的需求強度",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "商業需求等級",
   "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "設定商業建築的需求強度",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "工業需求等級",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "設定工業、倉庫和辦公室的需求強度",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "設定工業建築的需求強度",
   
-  "Common.ENUM[DemandModifier.DemandLevel.Off]": "關閉",
-  "Common.ENUM[DemandModifier.DemandLevel.Low]": "低 (25%)",
-  "Common.ENUM[DemandModifier.DemandLevel.Medium]": "中 (50%)",
-  "Common.ENUM[DemandModifier.DemandLevel.High]": "高 (75%)",
-  "Common.ENUM[DemandModifier.DemandLevel.Maximum]": "最大 (100%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Off]": "關閉",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Low]": "低 (25%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Medium]": "中 (50%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.High]": "高 (75%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Maximum]": "最大 (100%)",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "電力永不斷電",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "城市永遠有用不完的電力（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "所有建築始終有電力供應",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "自來水永不缺水",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "城市永遠有用不完的水（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "所有建築始終有清潔水供應",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "污水瞬間處理",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "所有污水都能即時處理完畢（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "污水系統永不滿溢",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "垃圾瞬間清理",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "所有垃圾都能即時清理乾淨（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "垃圾處理永不爆滿",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "醫療服務全覆蓋",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "所有市民都能得到醫療照顧（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "所有建築始終有醫療覆蓋",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "教育服務全覆蓋",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "所有市民都能接受教育（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "所有建築始終有教育覆蓋",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "警力全面部署",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "城市每個角落都有警察巡邏（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "所有建築始終有警察保護",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "消防隊快速救援",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "任何火災都能立即撲滅（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "所有建築始終有消防覆蓋",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "金錢永遠花不完",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "再也不用擔心破產了（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "城市預算永不耗盡",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "建設完全免費",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "蓋什麼都不用花錢（即將推出）",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "所有建築和基礎設施的建設成本為零",
   
   "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "建築零維護費",
-  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "所有建築都不用花錢維護（即將推出）"
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "所有建築和基礎設施沒有維護費用"
 }
