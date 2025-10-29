@@ -79,9 +79,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="l10n\**\*.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
+	  <Folder Include="docs\" />
 	</ItemGroup>
 
 	<!-- 匯入自動版本更新任務 -->

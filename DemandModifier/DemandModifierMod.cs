@@ -44,24 +44,6 @@ namespace DemandModifier
             AssetDatabase.global.LoadSettings(nameof(DemandModifier), Settings, new DemandModifierSettings(this));
             
             log.Info($"設定已載入 - 住宅需求: {Settings.ResidentialDemandLevel}, 商業需求: {Settings.CommercialDemandLevel}, 工業需求: {Settings.IndustrialDemandLevel}");
-
-            // 參考 Traffic 專案實作：建立所有語言源並自動註冊到 LocaleSources 字典
-            // 每個 Locale 建構子會自動註冊自己到 LocaleSources
-            var localeEN = new Localization.LocaleEN(Settings);
-            var localeZhHant = new Localization.LocaleZhHant(Settings);
-            var localeZhHans = new Localization.LocaleZhHans(Settings);
-            var localeJaJp = new Localization.LocaleJaJp(Settings);
-            var localeDeDe = new Localization.LocaleDeDe(Settings);
-            var localeEsEs = new Localization.LocaleEsEs(Settings);
-            var localeFrFr = new Localization.LocaleFrFr(Settings);
-            
-            log.Info($"多國語系已加載: {Localization.LocaleSources.Count} 種語言");
-
-            // 建立 Harmony 實例並自動套用所有標記的補丁
-            var harmony = new HarmonyLib.Harmony("net.johnytoxic.demandmodifier");
-            harmony.PatchAll();
-            
-            log.Info("Harmony 補丁已全部套用");
         }
 
         /// <summary>

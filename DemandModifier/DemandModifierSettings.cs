@@ -92,8 +92,6 @@ namespace DemandModifier
 
         /// <summary>
         /// 提供需求等級下拉選單的選項
-        /// 參考 Traffic 專案的 GetLanguageOptions() 實作
-        /// 從 Localization.LocaleSources 字典直接讀取所有已註冊的語言
         /// </summary>
         private DropdownItem<DemandLevel>[] GetDemandLevelOptions()
         {
