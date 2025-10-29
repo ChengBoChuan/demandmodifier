@@ -1,0 +1,59 @@
+{
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "Nachfragensteuerung",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "Serviceverwaltung",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "Wirtschaftssteuerung",
+
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemand]": "Wohnungsnachfrage",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemand]": "Handelsnachfrage",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemand]": "Industrienachfrage",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ServiceSettings]": "Serviceeinstellungen",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "Wirtschaftseinstellungen",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Wohnungsnachfrage-Niveau",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "Steuert das Nachfrageniveau für Wohnzonen. Aus bedeutet Spielstandard, Maximum bedeutet immer maximale Nachfrage.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "Handelsnachfrage-Niveau",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "Steuert das Nachfrageniveau für Handelszonen. Aus bedeutet Spielstandard, Maximum bedeutet immer maximale Nachfrage.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Industrienachfrage-Niveau",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "Steuert das Nachfrageniveau für Industriezonen. Aus bedeutet Spielstandard, Maximum bedeutet immer maximale Nachfrage.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Unbegrenzte Elektrizität",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "Keine Stromausfälle - alle Gebäude erhalten immer Strom.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Unbegrenztes Wasser",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "Kein Wassermangel - alle Gebäude erhalten immer sauberes Wasser.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Unbegrenztes Abwasser",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "Das Abwassersystem läuft nie über - alle Gebäude können Abwasser bewältigen.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Unbegrenzter Müll",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "Das Müllsystem läuft nie über - alle Gebäude können Müll bewältigen.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Unbegrenzte Gesundheitswesen",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "Alle Gebäude sind immer von Gesundheitsdiensten abgedeckt.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Unbegrenzte Bildung",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "Alle Gebäude sind immer von Bildungsdiensten abgedeckt.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Unbegrenzte Polizei",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "Alle Gebäude sind immer polizeilich geschützt.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Unbegrenzte Feuerwehr",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "Alle Gebäude sind immer durch Feuerwehrdienste geschützt.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Unbegrenztes Geld",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "Das Stadtbudget wird nie aufgebraucht - unbegrenztes Geld verfügbar.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Kostenlose Konstruktion",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "Alle Gebäude und Infrastrukturen kosten nichts zu bauen.",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "Keine Wartungskosten",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "Alle Gebäude und Infrastrukturen haben keine Wartungskosten.",
+
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Off]": "Aus (Spielstandard)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Low]": "Niedrig (25%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Medium]": "Mittel (50%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.High]": "Hoch (75%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Maximum]": "Maximum (100%)"
+}

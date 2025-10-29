@@ -1,0 +1,59 @@
+{
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.DemandControl]": "需要管理",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.ServiceControl]": "サービス管理",
+  "Options.SECTION[DemandModifier.DemandModifier.DemandModifierSettings.EconomyControl]": "経済管理",
+
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemand]": "住宅需要",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemand]": "商業需要",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemand]": "産業需要",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.ServiceSettings]": "サービス設定",
+  "Options.GROUP[DemandModifier.DemandModifier.DemandModifierSettings.EconomySettings]": "経済設定",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "住宅需要レベル",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.ResidentialDemandLevel]": "住宅地域の需要レベルを制御します。オフはゲームのデフォルト、最大は常に最高需要を意味します。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "商業需要レベル",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.CommercialDemandLevel]": "商業地域の需要レベルを制御します。オフはゲームのデフォルト、最大は常に最高需要を意味します。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "産業需要レベル",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.IndustrialDemandLevel]": "産業地域の需要レベルを制御します。オフはゲームのデフォルト、最大は常に最高需要を意味します。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "無制限の電力",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedElectricity]": "停電しない - すべての建物が常に電力供給を受けます。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "無制限の水",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedWater]": "水不足にならない - すべての建物が常にきれいな水を供給されます。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "無制限の下水",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedSewage]": "下水システムが決して満杯にならない - すべての建物が下水処理ができます。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "無制限のゴミ",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedGarbage]": "ゴミ処理システムが決して満杯にならない - すべての建物がゴミ処理ができます。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "無制限の医療",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedHealthcare]": "すべての建物が常に医療サービスでカバーされています。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "無制限の教育",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedEducation]": "すべての建物が常に教育サービスでカバーされています。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "無制限の警察",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedPolice]": "すべての建物が常に警察保護されています。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "無制限の消防",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedFire]": "すべての建物が常に消防保護されています。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "無制限のお金",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableUnlimitedMoney]": "都市の予算が枯渇しない - 無制限のお金が利用可能です。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "無料建設",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableFreeConstruction]": "すべての建物とインフラの建設コストがゼロです。",
+
+  "Options.OPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "メンテナンスコストなし",
+  "Options.OPTION_DESCRIPTION[DemandModifier.DemandModifier.DemandModifierSettings.EnableNoUpkeep]": "すべての建物とインフラのメンテナンスコストがゼロです。",
+
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Off]": "オフ (ゲームのデフォルト)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Low]": "低 (25%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Medium]": "中 (50%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.High]": "高 (75%)",
+  "Common.ENUM[DemandModifier.DemandModifier.DemandLevel.Maximum]": "最大 (100%)"
+}

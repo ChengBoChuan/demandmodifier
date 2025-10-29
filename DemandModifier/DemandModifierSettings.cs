@@ -92,36 +92,29 @@ namespace DemandModifier
 
         /// <summary>
         /// 提供需求等級下拉選單的選項
+        /// 返回已翻譯的下拉選單項目
         /// </summary>
         private DropdownItem<DemandLevel>[] GetDemandLevelOptions()
         {
             var items = new List<DropdownItem<DemandLevel>>();
             
             // 定義需求等級的順序
-            var levels = new DemandLevel[] { DemandLevel.Off, DemandLevel.Low, DemandLevel.Medium, DemandLevel.High, DemandLevel.Maximum };
+            var levels = new DemandLevel[] 
+            { 
+                DemandLevel.Off, 
+                DemandLevel.Low, 
+                DemandLevel.Medium, 
+                DemandLevel.High, 
+                DemandLevel.Maximum 
+            };
             
             foreach (var level in levels)
             {
-                // 構建語系鍵值 - 遊戲引擎會從註冊的語言源讀取
-                string localeKey = $"Common.ENUM[DemandModifier.DemandModifier.DemandLevel.{level}]";
+                // 構建語系鍵值
+                string localeKey = string.Format("Common.ENUM[DemandModifier.DemandModifier.DemandLevel.{0}]", level.ToString());
                 
                 // 嘗試從當前活躍語言字典中讀取翻譯
-                string displayName = level.ToString();  // 預設值
-                
-                try
-                {
-                    if (Game.SceneFlow.GameManager.instance?.localizationManager?.activeDictionary != null)
-                    {
-                        if (Game.SceneFlow.GameManager.instance.localizationManager.activeDictionary.TryGetValue(localeKey, out string translated))
-                        {
-                            displayName = translated;
-                        }
-                    }
-                }
-                catch
-                {
-                    // 若讀取失敗，使用預設值
-                }
+                string displayName = GetLocalizedEnumName(level);
                 
                 items.Add(new DropdownItem<DemandLevel>
                 {
@@ -131,6 +124,49 @@ namespace DemandModifier
             }
             
             return items.ToArray();
+        }
+
+        /// <summary>
+        /// 取得 Enum 值的本地化名稱
+        /// 使用遊戲內建的語言系統
+        /// </summary>
+        private string GetLocalizedEnumName(DemandLevel level)
+        {
+            try
+            {
+                string localeKey = string.Format("Common.ENUM[DemandModifier.DemandModifier.DemandLevel.{0}]", level.ToString());
+                
+                if (Game.SceneFlow.GameManager.instance != null && 
+                    Game.SceneFlow.GameManager.instance.localizationManager != null)
+                {
+                    var dict = Game.SceneFlow.GameManager.instance.localizationManager.activeDictionary;
+                    if (dict != null && dict.TryGetValue(localeKey, out string translated))
+                    {
+                        return translated;
+                    }
+                }
+            }
+            catch
+            {
+                // 若讀取失敗，使用預設值
+            }
+            
+            // 降級機制：返回英文預設名稱
+            switch (level)
+            {
+                case DemandLevel.Off:
+                    return "Off (Game Default)";
+                case DemandLevel.Low:
+                    return "Low (25%)";
+                case DemandLevel.Medium:
+                    return "Medium (50%)";
+                case DemandLevel.High:
+                    return "High (75%)";
+                case DemandLevel.Maximum:
+                    return "Maximum (100%)";
+                default:
+                    return level.ToString();
+            }
         }
 
         // ==================== 服務控制分頁 ====================
