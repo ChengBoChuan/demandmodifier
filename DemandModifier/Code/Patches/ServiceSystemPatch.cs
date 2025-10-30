@@ -41,12 +41,19 @@ namespace DemandModifier.Patches
         {
             try
             {
-                if (DemandModifierMod.Settings == null || !DemandModifierMod.Settings.EnableUnlimitedElectricity)
+                if (DemandModifierMod.Settings == null)
                 {
+                    Logger.Debug("無限電力補丁: 設定未初始化，跳過");
                     return;
                 }
 
-                Logger.Checkpoint("無限電力補丁執行");
+                if (!DemandModifierMod.Settings.EnableUnlimitedElectricity)
+                {
+                    Logger.Debug("無限電力補丁: 已禁用");
+                    return;
+                }
+
+                Logger.Debug("無限電力補丁執行中");
 
                 // 設定電力供應為最大值（使用泛型字段引用）
                 try
@@ -56,20 +63,26 @@ namespace DemandModifier.Patches
                     if (availabilityRef(__instance) != null)
                     {
                         Logger.Debug("✓ 電力供應欄位已處理");
+                        Logger.PatchResult("無限電力補丁", true);
+                    }
+                    else
+                    {
+                        Logger.Warn("⚠️ 無限電力補丁: 欄位為 null");
+                        Logger.PatchResult("無限電力補丁", false, "欄位為 null");
                     }
                 }
                 catch (Exception fieldEx)
                 {
                     Logger.Warn("無法修改電力供應欄位: {0}", fieldEx.Message);
+                    Logger.Exception(fieldEx, "無限電力補丁 - 欄位修改");
+                    Logger.PatchResult("無限電力補丁", false, fieldEx.Message);
                 }
-                
-                Logger.PatchResult("UnlimitedElectricity", true);
             }
             catch (Exception ex)
             {
-                Logger.Error("無限電力補丁失敗: {0}", ex.Message);
+                Logger.Error("無限電力補丁執行失敗: {0}", ex.Message);
                 Logger.Exception(ex, "無限電力系統補丁");
-                Logger.PatchResult("UnlimitedElectricity", false);
+                Logger.PatchResult("無限電力補丁", false, ex.Message);
             }
         }
     }

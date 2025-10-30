@@ -23,8 +23,6 @@ namespace DemandModifier.Patches
         {
             try
             {
-                Logger.Checkpoint("ResidentialDemandSystem 補丁執行");
-
                 if (DemandModifierMod.Settings == null)
                 {
                     Logger.Debug("住宅需求補丁: 設定未初始化，跳過");
@@ -40,19 +38,28 @@ namespace DemandModifier.Patches
                 }
 
                 int demandValue = (int)level;
-                Logger.Debug("住宅需求即將修改: {0} → {1}", "m_BuildingDemand", demandValue);
+                Logger.Debug("住宅需求補丁執行: 將修改需求為 {0}", demandValue);
 
                 // 使用 Harmony AccessTools 進行高效能存取
-                var fieldRef = AccessTools.FieldRefAccess<ResidentialDemandSystem, int>("m_BuildingDemand");
-                fieldRef(__instance) = demandValue;
-
-                Logger.PatchResult("住宅需求補丁", true);
-                Logger.Debug("✓ 住宅需求已修改為: {0}", demandValue);
+                try
+                {
+                    var fieldRef = AccessTools.FieldRefAccess<ResidentialDemandSystem, int>("m_BuildingDemand");
+                    fieldRef(__instance) = demandValue;
+                    Logger.Debug("✓ 住宅需求已修改為: {0}", demandValue);
+                    Logger.PatchResult("住宅需求補丁", true);
+                }
+                catch (Exception fieldEx)
+                {
+                    Logger.Error("無法存取或修改欄位 m_BuildingDemand: {0}", fieldEx.Message);
+                    Logger.Exception(fieldEx, "住宅需求補丁 - 欄位修改");
+                    Logger.PatchResult("住宅需求補丁", false, "欄位修改失敗");
+                }
             }
             catch (Exception ex)
             {
                 Logger.Error("住宅需求補丁執行失敗: {0}", ex.Message);
                 Logger.Exception(ex, "住宅需求系統補丁");
+                Logger.PatchResult("住宅需求補丁", false, ex.Message);
             }
         }
     }
@@ -68,8 +75,6 @@ namespace DemandModifier.Patches
         {
             try
             {
-                Logger.Checkpoint("CommercialDemandSystem 補丁執行");
-
                 if (DemandModifierMod.Settings == null)
                 {
                     Logger.Debug("商業需求補丁: 設定未初始化，跳過");
@@ -85,19 +90,28 @@ namespace DemandModifier.Patches
                 }
 
                 int demandValue = (int)level;
-                Logger.Debug("商業需求即將修改: {0} → {1}", "m_BuildingDemand", demandValue);
+                Logger.Debug("商業需求補丁執行: 將修改需求為 {0}", demandValue);
 
                 // 使用 Harmony AccessTools 進行高效能存取
-                var fieldRef = AccessTools.FieldRefAccess<CommercialDemandSystem, int>("m_BuildingDemand");
-                fieldRef(__instance) = demandValue;
-
-                Logger.PatchResult("商業需求補丁", true);
-                Logger.Debug("✓ 商業需求已修改為: {0}", demandValue);
+                try
+                {
+                    var fieldRef = AccessTools.FieldRefAccess<CommercialDemandSystem, int>("m_BuildingDemand");
+                    fieldRef(__instance) = demandValue;
+                    Logger.Debug("✓ 商業需求已修改為: {0}", demandValue);
+                    Logger.PatchResult("商業需求補丁", true);
+                }
+                catch (Exception fieldEx)
+                {
+                    Logger.Error("無法存取或修改欄位 m_BuildingDemand: {0}", fieldEx.Message);
+                    Logger.Exception(fieldEx, "商業需求補丁 - 欄位修改");
+                    Logger.PatchResult("商業需求補丁", false, "欄位修改失敗");
+                }
             }
             catch (Exception ex)
             {
                 Logger.Error("商業需求補丁執行失敗: {0}", ex.Message);
                 Logger.Exception(ex, "商業需求系統補丁");
+                Logger.PatchResult("商業需求補丁", false, ex.Message);
             }
         }
     }
@@ -114,8 +128,6 @@ namespace DemandModifier.Patches
         {
             try
             {
-                Logger.Checkpoint("IndustrialDemandSystem 補丁執行");
-
                 if (DemandModifierMod.Settings == null)
                 {
                     Logger.Debug("工業需求補丁: 設定未初始化，跳過");
@@ -131,19 +143,28 @@ namespace DemandModifier.Patches
                 }
 
                 int demandValue = (int)level;
-                Logger.Debug("工業需求即將修改為: {0}", demandValue);
+                Logger.Debug("工業需求補丁執行: 將修改需求為 {0}", demandValue);
 
                 // 使用 Harmony AccessTools 進行高效能存取
-                var fieldRef = AccessTools.FieldRefAccess<IndustrialDemandSystem, int>("m_BuildingDemand");
-                fieldRef(__instance) = demandValue;
-
-                Logger.PatchResult("工業需求補丁", true);
-                Logger.Debug("✓ 工業需求已修改為: {0}", demandValue);
+                try
+                {
+                    var fieldRef = AccessTools.FieldRefAccess<IndustrialDemandSystem, int>("m_BuildingDemand");
+                    fieldRef(__instance) = demandValue;
+                    Logger.Debug("✓ 工業需求已修改為: {0}", demandValue);
+                    Logger.PatchResult("工業需求補丁", true);
+                }
+                catch (Exception fieldEx)
+                {
+                    Logger.Error("無法存取或修改欄位 m_BuildingDemand: {0}", fieldEx.Message);
+                    Logger.Exception(fieldEx, "工業需求補丁 - 欄位修改");
+                    Logger.PatchResult("工業需求補丁", false, "欄位修改失敗");
+                }
             }
             catch (Exception ex)
             {
                 Logger.Error("工業需求補丁執行失敗: {0}", ex.Message);
                 Logger.Exception(ex, "工業需求系統補丁");
+                Logger.PatchResult("工業需求補丁", false, ex.Message);
             }
         }
     }
