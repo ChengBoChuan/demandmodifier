@@ -14,6 +14,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,18 +80,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="l10n\**\*.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
+	  <Compile Remove="Code\**" />
+	  <EmbeddedResource Remove="Code\**" />
+	  <None Remove="Code\**" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="docs\" />
-	  <Folder Include="Code\" />
-	  <Folder Include="Code\Localization\" />
-	  <Folder Include="Code\Patches\" />
-	  <Folder Include="Code\Systems\" />
-	  <Folder Include="Code\Utils\" />
 	</ItemGroup>
 
 	<!-- 匯入自動版本更新任務 -->
