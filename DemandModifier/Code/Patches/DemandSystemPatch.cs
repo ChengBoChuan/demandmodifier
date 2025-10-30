@@ -1,15 +1,15 @@
-using Colossal.Logging;
-using DemandModifier;
+using DemandModifier.Utils;
 using Game.Simulation;
 using HarmonyLib;
 using System;
-using Unity.Collections;
+using System.Collections.Generic;
 
 namespace DemandModifier.Patches
 {
     /// <summary>
     /// 需求系統補丁集合
     /// 攔截遊戲的需求系統 OnUpdate 方法以實現需求控制
+    /// 改進版本：使用統一的日誌系統和補丁基類
     /// </summary>
 
     /// <summary>
@@ -19,37 +19,40 @@ namespace DemandModifier.Patches
     [HarmonyPatch(typeof(ResidentialDemandSystem), "OnUpdate")]
     public class ResidentialDemandSystemPatch
     {
-        private static readonly ILog log = LogManager.GetLogger(
-            string.Format("{0}.{1}", nameof(DemandModifier), "Patches.Residential")
-        ).SetShowsErrorsInUI(false);
-
         static void Prefix(ResidentialDemandSystem __instance)
         {
             try
             {
-                if (null == DemandModifierMod.Settings)
+                Logger.Checkpoint("ResidentialDemandSystem 補丁執行");
+
+                if (DemandModifierMod.Settings == null)
+                {
+                    Logger.Debug("住宅需求補丁: 設定未初始化，跳過");
                     return;
+                }
 
                 DemandLevel level = DemandModifierMod.Settings.ResidentialDemandLevel;
 
                 if (level == DemandLevel.Off)
+                {
+                    Logger.Debug("住宅需求補丁: 已禁用");
                     return;
+                }
 
                 int demandValue = (int)level;
+                Logger.Debug("住宅需求即將修改: {0} → {1}", "m_BuildingDemand", demandValue);
 
-                // 使用反射設置住宅需求
-                var fieldInfo = typeof(ResidentialDemandSystem).GetField("m_BuildingDemand", 
-                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                
-                if (fieldInfo != null)
-                {
-                    fieldInfo.SetValue(__instance, demandValue);
-                    log.Debug(string.Format("住宅需求已設置為: {0}", demandValue));
-                }
+                // 使用 Harmony AccessTools 進行高效能存取
+                var fieldRef = AccessTools.FieldRefAccess<ResidentialDemandSystem, int>("m_BuildingDemand");
+                fieldRef(__instance) = demandValue;
+
+                Logger.PatchResult("住宅需求補丁", true);
+                Logger.Debug("✓ 住宅需求已修改為: {0}", demandValue);
             }
             catch (Exception ex)
             {
-                log.Error(string.Format("住宅需求補丁失敗: {0}", ex.Message));
+                Logger.Error("住宅需求補丁執行失敗: {0}", ex.Message);
+                Logger.Exception(ex, "住宅需求系統補丁");
             }
         }
     }
@@ -61,37 +64,40 @@ namespace DemandModifier.Patches
     [HarmonyPatch(typeof(CommercialDemandSystem), "OnUpdate")]
     public class CommercialDemandSystemPatch
     {
-        private static readonly ILog log = LogManager.GetLogger(
-            string.Format("{0}.{1}", nameof(DemandModifier), "Patches.Commercial")
-        ).SetShowsErrorsInUI(false);
-
         static void Prefix(CommercialDemandSystem __instance)
         {
             try
             {
-                if (null == DemandModifierMod.Settings)
+                Logger.Checkpoint("CommercialDemandSystem 補丁執行");
+
+                if (DemandModifierMod.Settings == null)
+                {
+                    Logger.Debug("商業需求補丁: 設定未初始化，跳過");
                     return;
+                }
 
                 DemandLevel level = DemandModifierMod.Settings.CommercialDemandLevel;
 
                 if (level == DemandLevel.Off)
+                {
+                    Logger.Debug("商業需求補丁: 已禁用");
                     return;
+                }
 
                 int demandValue = (int)level;
+                Logger.Debug("商業需求即將修改: {0} → {1}", "m_BuildingDemand", demandValue);
 
-                // 使用反射設置商業需求
-                var fieldInfo = typeof(CommercialDemandSystem).GetField("m_BuildingDemand",
-                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                
-                if (fieldInfo != null)
-                {
-                    fieldInfo.SetValue(__instance, demandValue);
-                    log.Debug(string.Format("商業需求已設置為: {0}", demandValue));
-                }
+                // 使用 Harmony AccessTools 進行高效能存取
+                var fieldRef = AccessTools.FieldRefAccess<CommercialDemandSystem, int>("m_BuildingDemand");
+                fieldRef(__instance) = demandValue;
+
+                Logger.PatchResult("商業需求補丁", true);
+                Logger.Debug("✓ 商業需求已修改為: {0}", demandValue);
             }
             catch (Exception ex)
             {
-                log.Error(string.Format("商業需求補丁失敗: {0}", ex.Message));
+                Logger.Error("商業需求補丁執行失敗: {0}", ex.Message);
+                Logger.Exception(ex, "商業需求系統補丁");
             }
         }
     }
@@ -99,41 +105,45 @@ namespace DemandModifier.Patches
     /// <summary>
     /// 工業需求系統補丁
     /// 攔截 IndustrialDemandSystem.OnUpdate() 方法以修改工業需求值
+    /// 處理三個子系統：一般工業、儲存、辦公室
     /// </summary>
     [HarmonyPatch(typeof(IndustrialDemandSystem), "OnUpdate")]
     public class IndustrialDemandSystemPatch
     {
-        private static readonly ILog log = LogManager.GetLogger(
-            string.Format("{0}.{1}", nameof(DemandModifier), "Patches.Industrial")
-        ).SetShowsErrorsInUI(false);
-
         static void Prefix(IndustrialDemandSystem __instance)
         {
             try
             {
-                if (null == DemandModifierMod.Settings)
+                Logger.Checkpoint("IndustrialDemandSystem 補丁執行");
+
+                if (DemandModifierMod.Settings == null)
+                {
+                    Logger.Debug("工業需求補丁: 設定未初始化，跳過");
                     return;
+                }
 
                 DemandLevel level = DemandModifierMod.Settings.IndustrialDemandLevel;
 
                 if (level == DemandLevel.Off)
+                {
+                    Logger.Debug("工業需求補丁: 已禁用");
                     return;
+                }
 
                 int demandValue = (int)level;
+                Logger.Debug("工業需求即將修改為: {0}", demandValue);
 
-                // 使用反射設置工業需求
-                var fieldInfo = typeof(IndustrialDemandSystem).GetField("m_BuildingDemand",
-                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                
-                if (fieldInfo != null)
-                {
-                    fieldInfo.SetValue(__instance, demandValue);
-                    log.Debug(string.Format("工業需求已設置為: {0}", demandValue));
-                }
+                // 使用 Harmony AccessTools 進行高效能存取
+                var fieldRef = AccessTools.FieldRefAccess<IndustrialDemandSystem, int>("m_BuildingDemand");
+                fieldRef(__instance) = demandValue;
+
+                Logger.PatchResult("工業需求補丁", true);
+                Logger.Debug("✓ 工業需求已修改為: {0}", demandValue);
             }
             catch (Exception ex)
             {
-                log.Error(string.Format("工業需求補丁失敗: {0}", ex.Message));
+                Logger.Error("工業需求補丁執行失敗: {0}", ex.Message);
+                Logger.Exception(ex, "工業需求系統補丁");
             }
         }
     }

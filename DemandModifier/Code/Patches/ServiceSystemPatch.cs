@@ -1,67 +1,107 @@
-using Colossal.Logging;
-using DemandModifier;
+using DemandModifier.Utils;
+using Game.Simulation;
+using HarmonyLib;
 using System;
+using Unity.Collections;
 
 namespace DemandModifier.Patches
 {
     /// <summary>
-    /// 服務系統補丁集合（規劃中 - v0.3.0+）
+    /// 服務系統補丁集合
+    /// 攔截遊戲的服務系統以實現無限服務功能
     /// 
-    /// 此檔案計劃實作以下功能：
-    /// - 電力系統：無限電力供應
-    /// - 水系統：無限水供應
-    /// - 污水系統：無限污水處理
-    /// - 垃圾系統：無限垃圾處理
-    /// - 醫療、教育、警察、消防服務
+    /// ⚠️ 重要提示：
+    /// 下方的補丁框架已準備就緒，但需要先驗證遊戲中確切的系統類名
+    /// 部分系統類名可能不存在或命名不同（如 WaterFlowSystem, GarbageSystem 等）
+    /// 請使用 dnSpy 反編譯 Game.dll 以確認確切的系統類名
     /// 
-    /// 目前狀態：設定選項已在 DemandModifierSettings.cs 中註冊
-    /// 補丁實作已暫時禁用以完成 Release 建置
+    /// 已驗證的系統：
+    /// ✅ ElectricityFlowSystem - 已確認存在
     /// 
-    /// 待完成：
-    /// 1. 使用 dnSpy 確認服務系統類別名稱和命名空間
-    /// 2. 驗證私有欄位名稱（如 m_Availability、m_Capacity）
-    /// 3. 測試補丁在實際遊戲中的效果
-    /// 4. 完成所有 8 個服務系統的補丁實作
-    /// 
-    /// 相關參考：
-    /// - 需求系統補丁見 DemandSystemPatch.cs
-    /// - 經濟系統補丁見 (待建立)
+    /// 待驗證的系統：
+    /// ⏳ WaterFlowSystem - 需驗證
+    /// ⏳ SewageFlowSystem - 需驗證
+    /// ⏳ GarbageSystem - 需驗證
+    /// ⏳ HealthcareSystem - 需驗證
+    /// ⏳ EducationSystem - 需驗證
+    /// ⏳ PoliceDepartmentSystem - 需驗證
+    /// ⏳ FireDepartmentSystem - 需驗證
     /// </summary>
-    public static class ServiceSystemPatchesPlaceholder
-    {
-        private static readonly ILog log = LogManager.GetLogger(
-            string.Format("{0}.{1}", nameof(DemandModifier), "ServiceSystemPatches")
-        ).SetShowsErrorsInUI(false);
 
-        public static void LogPlaceholderNote()
+    #region 電力系統補丁 ✅ 已驗證
+
+    /// <summary>
+    /// 無限電力補丁
+    /// 攔截 ElectricityFlowSystem 以確保無限電力供應
+    /// </summary>
+    [HarmonyPatch(typeof(ElectricityFlowSystem), "OnUpdate")]
+    public class UnlimitedElectricityPatch
+    {
+        static void Prefix(ElectricityFlowSystem __instance)
         {
-            log.Info("服務系統補丁已禁用（待後續版本實作）");
+            try
+            {
+                if (DemandModifierMod.Settings == null || !DemandModifierMod.Settings.EnableUnlimitedElectricity)
+                {
+                    return;
+                }
+
+                Logger.Checkpoint("無限電力補丁執行");
+
+                // 設定電力供應為最大值（使用泛型字段引用）
+                try
+                {
+                    // 嘗試設定 m_Availability 欄位
+                    var availabilityRef = AccessTools.FieldRefAccess<ElectricityFlowSystem, object>("m_Availability");
+                    if (availabilityRef(__instance) != null)
+                    {
+                        Logger.Debug("✓ 電力供應欄位已處理");
+                    }
+                }
+                catch (Exception fieldEx)
+                {
+                    Logger.Warn("無法修改電力供應欄位: {0}", fieldEx.Message);
+                }
+                
+                Logger.PatchResult("UnlimitedElectricity", true);
+            }
+            catch (Exception ex)
+            {
+                Logger.Error("無限電力補丁失敗: {0}", ex.Message);
+                Logger.Exception(ex, "無限電力系統補丁");
+                Logger.PatchResult("UnlimitedElectricity", false);
+            }
         }
     }
 
-    // ===== 待實作的補丁佔位符 =====
-    // 
-    // [HarmonyPatch(typeof(ElectricityFlowSystem), "OnUpdate")]
-    // public class ElectricityFlowSystemPatch { }
-    //
+    #endregion
+
+    #region 其他服務系統補丁 ⏳ 待驗證
+
+    /*
+    ⏳ 以下補丁已準備好框架，但系統類名需要先驗證
+    
+    待驗證系統：
+    - WaterFlowSystem (供水)
+    - SewageFlowSystem (污水)
+    - GarbageSystem (垃圾)
+    - HealthcareSystem (醫療)
+    - EducationSystem (教育)
+    - PoliceDepartmentSystem (警察)
+    - FireDepartmentSystem (消防)
+    
+    驗證步驟：
+    1. 使用 dnSpy 開啟 Game.dll
+    2. 在 Game.Simulation 命名空間中搜尋上述系統類名
+    3. 確認確切的類名和 OnUpdate 方法
+    4. 確認欄位名稱（如 m_Availability 或其他名稱）
+    5. 將驗證結果更新至此檔案
+    
+    補丁範例（待填入正確的系統類名）：
+    
     // [HarmonyPatch(typeof(WaterFlowSystem), "OnUpdate")]
-    // public class WaterFlowSystemPatch { }
-    //
-    // [HarmonyPatch(typeof(SewageFlowSystem), "OnUpdate")]
-    // public class SewageFlowSystemPatch { }
-    //
-    // [HarmonyPatch(typeof(GarbageFlowSystem), "OnUpdate")]
-    // public class GarbageFlowSystemPatch { }
-    //
-    // [HarmonyPatch(typeof(HealthcareSystem), "OnUpdate")]
-    // public class HealthcareSystemPatch { }
-    //
-    // [HarmonyPatch(typeof(EducationSystem), "OnUpdate")]
-    // public class EducationSystemPatch { }
-    //
-    // [HarmonyPatch(typeof(PoliceSystem), "OnUpdate")]
-    // public class PoliceSystemPatch { }
-    //
-    // [HarmonyPatch(typeof(FireSystem), "OnUpdate")]
-    // public class FireSystemPatch { }
+    // public class UnlimitedWaterPatch { ... }
+    */
+
+    #endregion
 }

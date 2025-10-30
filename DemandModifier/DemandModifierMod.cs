@@ -36,7 +36,19 @@ namespace DemandModifier
         /// <param name="updateSystem">遊戲更新系統</param>
         public void OnLoad(UpdateSystem updateSystem)
         {
-            log.Info(nameof(OnLoad));
+            log.Info("▶ ════════════ DemandModifier 載入開始 ════════════");
+
+            try
+            {
+                // ===== 初始化新日誌系統 =====
+                log.Info("初始化進階日誌系統...");
+                Utils.Logger.Initialize(nameof(DemandModifier), nameof(DemandModifierMod));
+                Utils.Logger.Info("✓ 日誌系統已初始化");
+            }
+            catch (System.Exception ex)
+            {
+                log.Error("日誌系統初始化失敗: " + ex.Message);
+            }
 
             try
             {
@@ -44,10 +56,12 @@ namespace DemandModifier
                 log.Info("初始化多國語言系統...");
                 LocalizationInitializer.Initialize();
                 LocalizationInitializer.ListAvailableLocales();
+                Utils.Logger.Info("✓ 語言系統已初始化");
             }
             catch (System.Exception ex)
             {
-                log.Error(string.Format("語言系統初始化失敗: {0}", ex.Message));
+                log.Error("語言系統初始化失敗: " + ex.Message);
+                Utils.Logger.Error("語言系統初始化失敗: " + ex.Message);
             }
 
             try
@@ -60,14 +74,16 @@ namespace DemandModifier
                 // 從全域資料庫載入設定
                 AssetDatabase.global.LoadSettings(nameof(DemandModifier), Settings, new DemandModifierSettings(this));
                 
-                log.Info(string.Format("設定已載入 - 住宅需求: {0}, 商業需求: {1}, 工業需求: {2}",
+                log.Info("✓ 設定已載入");
+                Utils.Logger.Info("設定已載入 - 住宅: {0}, 商業: {1}, 工業: {2}",
                     Settings.ResidentialDemandLevel, 
                     Settings.CommercialDemandLevel,
-                    Settings.IndustrialDemandLevel));
+                    Settings.IndustrialDemandLevel);
             }
             catch (System.Exception ex)
             {
-                log.Error(string.Format("設定系統初始化失敗: {0}", ex.Message));
+                log.Error("設定系統初始化失敗: " + ex.Message);
+                Utils.Logger.Error("設定系統初始化失敗: " + ex.Message);
             }
 
             try
@@ -78,11 +94,15 @@ namespace DemandModifier
                 harmony.PatchAll(typeof(DemandModifierMod).Assembly);
                 
                 log.Info("✓ Harmony 補丁註冊完成");
+                Utils.Logger.Info("✓ Harmony 補丁系統已初始化");
             }
             catch (System.Exception ex)
             {
-                log.Error(string.Format("Harmony 補丁系統初始化失敗: {0}", ex.Message));
+                log.Error("Harmony 補丁系統初始化失敗: " + ex.Message);
+                Utils.Logger.Error("Harmony 補丁系統初始化失敗: " + ex.Message);
             }
+
+            log.Info("▶ ════════════ DemandModifier 載入完成 ════════════");
         }
 
         /// <summary>
@@ -103,7 +123,7 @@ namespace DemandModifier
             }
             catch (System.Exception ex)
             {
-                log.Error(string.Format("Harmony 補丁卸載失敗: {0}", ex.Message));
+                log.Error("Harmony 補丁卸載失敗: " + ex.Message);
             }
 
             try
@@ -118,7 +138,7 @@ namespace DemandModifier
             }
             catch (System.Exception ex)
             {
-                log.Error(string.Format("設定卸載失敗: {0}", ex.Message));
+                log.Error("設定卸載失敗: " + ex.Message);
             }
         }
     }
